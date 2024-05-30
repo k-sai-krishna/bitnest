@@ -120,6 +120,9 @@ label,input{
         margin: 0 0 100px 0;
         color:black;
     }
+    label{
+        font-size:15px;
+    }
 }
 /* @media () {
     body{
