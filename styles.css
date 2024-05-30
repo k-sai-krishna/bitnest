@@ -116,7 +116,7 @@ label,input{
     .side{
         width: 100%;
     }
-    .head,.bdy{
+    .hd,.bdy{
         margin: 0 0 100px 0;
         color:black;
     }
