@@ -19,19 +19,21 @@
             </div>
             <form action="sign_in.php" method="post">
                 <label class="l1">Full Name<br>
-                    <input type="text">
+                    <input type="text" required>
                 </label><br>
                 <label class="l1">Email<br>
-                    <input type="email">
+                    <input type="email" required>
                 </label><br>
                 <label>Password<br>
                     <input type="password"
-                    id="pass">
+                    id="pass"
+                    required>
                 </label><br>
                 <label>Confirm Password<br>
                     <input type="password" 
                     id="c_pass" 
-                    onkeyup="passwordValidate()">
+                    onkeyup="passwordValidate()"
+                    required>
                 </label><br>
                 <span id="wrong_p"></span>
                 <label class="c">Captcha<br>
@@ -44,7 +46,7 @@
                         id = 'c_cap'
                         placeholder="Enter captcha"
                         onkeyup="captchaValidate()"
-                        >
+                        required>
                 </label><br>
                 <span id="wrong_c"></span>
                 <label class="already">Already have an account? <a href="index.html">Sign in</a></label>
