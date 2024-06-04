@@ -2,8 +2,9 @@ body{
     background-color: darkkhaki;
     /* color:white; */
     font-family: "Titillium Web", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-weight: 300;
+    font-style: normal;
+    user-select:none;
 }
 label{
     width:100%;
@@ -65,16 +66,37 @@ h2{
   border-width:0;
 }
 .captcha{
-    width:45%;
+    width:40%;
+    user-select: none;
+}
+.c{
+    position:relative;
 }
 .Ecaptcha{
-    width:45%;
-    float: right;
+    width:40%;
+    float:right;
 }
-
+.r{
+    height:20px;
+    width:20px;
+    display:inline;
+    position: absolute;
+    top:57% ;
+    left:45.6%;
+}
 
 .one{
     font-size:50px;
     font-weight: bold;
     text-align:center;
+}
+
+@media (max-width : 600px){
+    .cont{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .side{
+        width: 100%;
+    }
 }
