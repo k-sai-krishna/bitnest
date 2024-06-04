@@ -6,11 +6,10 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="sign_up.css"> 
     <script src="signup.js"></script>
+    <link rel="icon" href="images/C.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/C.ico" type="image/x-icon"/>
-
 </head>
 <body onload="randtext()">
     <div class="cont">
@@ -35,14 +34,17 @@
                     onkeyup="passwordValidate()">
                 </label><br>
                 <span id="wrong_p"></span>
-                <label>Captcha<br>
+                <label class="c">Captcha<br>
                     <input class="captcha"
                     id = 'cap'
-                    readonly><span onclick="randtext()">|@|</span>
+                    readonly
+                    disabled>
+                    <img src="images/captchaR.png" class="r" onclick="randtext()">
                     <input class="Ecaptcha" 
-                    id = 'c_cap'
-                    placeholder="Enter captcha"
-                    onkeyup="captchaValidate()">
+                        id = 'c_cap'
+                        placeholder="Enter captcha"
+                        onkeyup="captchaValidate()"
+                        >
                 </label><br>
                 <span id="wrong_c"></span>
                 <label class="already">Already have an account? <a href="index.html">Sign in</a></label>
