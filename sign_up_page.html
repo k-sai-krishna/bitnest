@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="randtext()">
     <div class="cont">
         <div class="left side">
             <div class="top">
@@ -35,10 +35,14 @@
                 <span id="wrong_p"></span>
                 <label>Captcha<br>
                     <input class="captcha"
-                    readonly>
+                    id = 'cap'
+                    readonly><span onclick="randtext()">|@|</span>
                     <input class="Ecaptcha" 
-                    placeholder="Enter captcha">
+                    id = 'c_cap'
+                    placeholder="Enter captcha"
+                    onkeyup="captchaValidate()">
                 </label><br>
+                <span id="wrong_c"></span>
                 <label class="already">Already have an account? <a href="index.html">Sign in</a></label>
                 <label>
                     <input type="submit" 
