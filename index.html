@@ -16,7 +16,7 @@
 <body>
     <div class="container1">
         <div class="left side">
-            <div class="head">Built to<br>Showcase Portfolios</div>
+            <div class="hd">Built to<br>Showcase Portfolios</div>
             <div class="bdy">After creating an account in bitnest you should answer some questions about you then you will see a 2D game like view of your portfolio that you can showcase to your friends</div>
         </div>
         <div class="right side">
