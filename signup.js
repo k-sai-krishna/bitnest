@@ -22,7 +22,7 @@ function randtext(){
     document.getElementById('cap').placeholder = captcha;
 }
 function captchaValidate(){
-    let c = document.getElementById('cap').value;
+    let c = document.getElementById('cap').placeholder;
     let cc = document.getElementById('c_cap').value;
     if (c != cc){
         document.getElementById('wrong_c').innerHTML = 'Captcha doesn\'t match';
