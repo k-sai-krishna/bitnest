@@ -19,7 +19,7 @@ function randtext(){
         rand = Math.floor(Math.random() * arr.length);
         captcha = captcha + arr[rand];
     }
-    document.getElementById('cap').value = captcha;
+    document.getElementById('cap').placeholder = captcha;
 }
 function captchaValidate(){
     let c = document.getElementById('cap').value;
