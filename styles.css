@@ -95,7 +95,7 @@ label,input{
     font-size:20px;
     border-radius:10px;
 }
-.head{
+.hd{
     margin:220px 0 0 0;
     font-size:45px;
     font-weight:bold;
@@ -116,7 +116,7 @@ label,input{
     .side{
         width: 100%;
     }
-    .head,.bdy{
+    .hd,.bdy{
         margin: 0 0 100px 0;
         color:black;
     }
