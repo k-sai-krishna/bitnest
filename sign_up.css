@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(15, 97, 97);
+    background-color: darkkhaki;
     /* color:white; */
     font-family: "Titillium Web", sans-serif;
   font-weight: 300;
@@ -16,8 +16,7 @@ a{
 }
 img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     width:40%;
 }
 form{
@@ -49,6 +48,7 @@ h2{
 }
 .right{
     width: 45%;
+    margin-top:10%;
 }
 .already{
     text-align:center;
@@ -70,4 +70,11 @@ h2{
 .Ecaptcha{
     width:45%;
     float: right;
+}
+
+
+.one{
+    font-size:50px;
+    font-weight: bold;
+    text-align:center;
 }
