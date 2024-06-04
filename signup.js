@@ -8,6 +8,8 @@ function passwordValidate(){
     }
     else{
         document.getElementById('wrong_p').innerHTML='Password Matches';
+        document.getElementById('create').disabled = false;
+
     }
 }
 function randtext(){
