@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="sign_up.css"> 
+    <script src="signup.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cont">
+        <div class="left side">
+            <div class="top">
+                <h2>Join with us!</h2>
+            </div>
+            <form action="sign_in.php" method="post">
+                <label class="l1">Full Name<br>
+                    <input type="text">
+                </label><br>
+                <label class="l1">Email<br>
+                    <input type="email">
+                </label><br>
+                <label>Password<br>
+                    <input type="password"
+                    id="pass">
+                </label><br>
+                <label>Confirm Password<br>
+                    <input type="password" 
+                    id="c_pass" 
+                    onkeyup="passwordValidate()">
+                </label><br>
+                <span id="wrong_p"></span>
+                <label>Captcha<br>
+                    <input class="captcha"
+                    readonly>
+                    <input class="Ecaptcha" 
+                    placeholder="Enter captcha">
+                </label><br>
+                <label class="already">Already have an account? <a href="index.html">Sign in</a></label>
+                <label>
+                    <input type="submit" 
+                    value="Sign up"
+                    id="create">
+                </label>
+            </form>
+        </div>
+        <div class="right side">
+            <img src="images/bytnest.png">
+        </div>
+    </div>
+</body>
+</html>
